@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingRwoStyle">
+        <attr name="rating" format="float"/>
+        <attr name="ratingCount" format="integer"/>
+    </declare-styleable>
+</resources>
