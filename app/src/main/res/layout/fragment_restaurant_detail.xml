@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_fragment_restaurant_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/quantum_grey"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_fragment_restaurant_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Good Restaurant"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/quantum_grey900"
+        android:textStyle="bold"
+        app:layout_constraintWidth_percent="0.92"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fragment_restaurant_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.example.restaurantfinder.ui.RatingRow
+        android:id="@+id/rating_restaurant_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragment_restaurant_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_fragment_restaurant_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Good Restaurant"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/quantum_grey900"
+        app:layout_constraintWidth_percent="0.92"
+        app:layout_constraintTop_toBottomOf="@+id/rating_restaurant_detail"
+        app:layout_constraintStart_toStartOf="@+id/tv_fragment_restaurant_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

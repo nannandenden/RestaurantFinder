@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Restaurant Finder</string>
+    <string name="menu_search">Enter Restaurant Name</string>
+    <string name="permission_title">Please enable the location access</string>
+    <string name="permission_message"><![CDATA[We need your permission so we can find a good restaurant for you! Please go to Setting to enable the location permission. Thank you.]]></string>
+    <string name="ok">OK</string>
+    <string name="restaurant_finder">Restaurant Finder</string>
+    <string name="rating_count">(%d)</string>
+    <string name="no_restaurant_result">No result found.</string>
 </resources>
